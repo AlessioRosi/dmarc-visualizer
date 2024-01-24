@@ -15,8 +15,6 @@ services:
     environment:
       - discovery.type=single-node
       - "ES_JAVA_OPTS=-Xms750m -Xmx750m"
-    volumes:
-      - ./elastic_data:/usr/share/elasticsearch/data
     
 
   grafana:
