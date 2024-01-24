@@ -1,5 +1,5 @@
-#FROM python:3.9-alpine3.16
-FROM python:3.7-alpine
+FROM python:3.9-alpine3.16
+
 
 RUN apk add --update --no-cache libxml2-dev libxslt-dev
 RUN apk add --update --no-cache --virtual .build_deps build-base libffi-dev \
