@@ -7,3 +7,6 @@ RUN apk add --update --no-cache --virtual .build_deps build-base libffi-dev \
 
 COPY parsedmarc.ini /
 #COPY GeoLite2-Country.mmdb /usr/share/GeoIP/GeoLite2-Country.mmdb
+
+# Command to run the parsedmarc tool
+CMD ["parsedmarc"]
